@@ -22,8 +22,8 @@ func generate(plane_len, node_count, path_count):
 				break
 	
 	# step 2: connect all the points into a graph without intersecting edges
-	var pool = PoolVector2Array(points)
-	var triangles = Geometry.triangulate_delaunay_2d(pool)
+	var pool = PackedVector2Array(points)
+	var triangles = Geometry2D.triangulate_delaunay(pool)
 	
 	# step 3: finding paths from start to finish using A*
 	var astar = AStar2D.new()
