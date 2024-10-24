@@ -21,4 +21,4 @@ var map_data = generator.generate(30, 200, 12)
 ```
 
 ## Example:
-You can find example of generating map with this tool in **example** folder.
+![example output](./Screenshot.png)
